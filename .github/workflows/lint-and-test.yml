@@ -26,3 +26,5 @@ jobs:
           version: v1.45.2
       - name: run test
         run: go test -v ./...
+      - name: Codecov
+        uses: codecov/codecov-action@v3.1.1
