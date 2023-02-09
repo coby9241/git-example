@@ -12,7 +12,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const timeout = 5 * time.Second
+const timeout = 3 * time.Second
 
 func main() {
 	ctx, cancel := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
